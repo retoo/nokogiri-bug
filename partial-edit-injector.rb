@@ -20,7 +20,7 @@ def replace_between(_first, _last, _content)
 end
 
 input = ""
-10.times do |i| 
+50.times do |i| 
   input += ("<p id='para-#{i}' class='default'>" + ("12&eacute;&eacute;&eacute;&eacute;3123" * 100) + "</p>")
 end
 
@@ -36,5 +36,5 @@ end
 puts "replace_length: #{partial_content.length}"
 
 first_element = parent.at("#para-0")
-last_element = parent.at("#para-9")
+last_element = parent.at("#para-30")
 replace_between(first_element, last_element, partial_content)
